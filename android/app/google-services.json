@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "362577640088",
+    "project_id": "wpms-dd164",
+    "storage_bucket": "wpms-dd164.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:362577640088:android:c1e5251430770adb652eed",
+        "android_client_info": {
+          "package_name": "com.example.wpms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "362577640088-gr2ed2phel0fthenctnm3kmmd99t8mus.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2caCoB-EooA_btzSiS0zrnvsOTqZ6CtM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "362577640088-gr2ed2phel0fthenctnm3kmmd99t8mus.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "362577640088-6a08ct7rm6308fp9vmpvjvaiu7c9vam5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.WPMS"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
