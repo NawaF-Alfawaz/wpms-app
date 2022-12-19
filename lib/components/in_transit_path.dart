@@ -7,6 +7,7 @@ class InTransitPath extends StatelessWidget {
   final PackageData packageData;
   InTransitPath({super.key, required this.packageData});
   void setPath() {
+    steps.clear();
     final received = step.StepperData(
       title: step.StepperText(
         "Received",
