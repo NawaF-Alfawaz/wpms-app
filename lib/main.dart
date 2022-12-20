@@ -13,10 +13,10 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   // // Initialize Firebase
   await Firebase.initializeApp();
-  runApp(FlashChat());
+  runApp(WPMS());
 }
 
-class FlashChat extends StatelessWidget {
+class WPMS extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     SystemChrome.setPreferredOrientations([
