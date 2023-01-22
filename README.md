@@ -38,6 +38,7 @@ h) The system should be able to send notifications whenever the packages become 
 for delivery as well as if they are delayed. 
 i) Each package will have a unique barcode that the system will be able to read. 
 
+
 ![WhatsApp Image 2023-01-19 at 11 00 30 AM (1)](https://user-images.githubusercontent.com/63208501/213922832-e2bcab60-7334-4f8a-8499-0819ef14e03a.jpeg)
 ![WhatsApp Image 2023-01-19 at 11 00 27 AM](https://user-images.githubusercontent.com/63208501/213922834-ce759342-b79b-410e-948c-36d077ff9afe.jpeg)
 ![WhatsApp Image 2023-01-19 at 11 00 30 AM (2)](https://user-images.githubusercontent.com/63208501/213922835-a8af5de5-6e9b-4723-8cc5-cb92221b4060.jpeg)
