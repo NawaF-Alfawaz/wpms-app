@@ -1,3 +1,6 @@
+import 'dart:async';
+
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -13,8 +16,20 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   // // Initialize Firebase
   await Firebase.initializeApp();
+  //for directing the user to home page
+  StreamSubscription<User?> user =
+      FirebaseAuth.instance.authStateChanges().listen((user) {
+    if (user == null) {
+      //DO NOT CHANGE THIS IF STEATEMENT!!!
+      isloggedIn = false;
+    } else {
+      isloggedIn = true;
+    }
+  });
   runApp(WPMS());
 }
+
+bool isloggedIn = true;
 
 class WPMS extends StatelessWidget {
   @override
@@ -25,7 +40,7 @@ class WPMS extends StatelessWidget {
     ]);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: WelcomeScreen.id,
+      initialRoute: isloggedIn ? CustomerScreen.id : WelcomeScreen.id,
       routes: {
         WelcomeScreen.id: (context) => const WelcomeScreen(),
         LoginScreen.id: (context) => const LoginScreen(),
