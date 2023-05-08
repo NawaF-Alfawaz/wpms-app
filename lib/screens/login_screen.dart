@@ -4,6 +4,7 @@ import 'customer_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'registration_screen.dart';
+import 'verify_email.dart';
 
 class LoginScreen extends StatefulWidget {
   static const String id = 'login_screen';
@@ -31,7 +32,7 @@ class _LoginScreenState extends State<LoginScreen> {
     try {
       await _auth.signInWithEmailAndPassword(email: email, password: password);
       Navigator.of(lastContext!).pop();
-      Navigator.of(lastContext!).pushReplacementNamed(CustomerScreen.id);
+      Navigator.of(lastContext!).pushReplacementNamed(VerifyEmailPage.id);
     } on FirebaseAuthException catch (error) {
       var message = 'An error occurd, please check your credentials!';
       if (error.message != null) {

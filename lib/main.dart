@@ -4,6 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:wpms/screens/verify_email.dart';
 import '/screens/profile_screen.dart';
 
 import 'screens/customer_screen.dart';
@@ -39,7 +40,7 @@ class WPMS extends StatelessWidget {
       DeviceOrientation.portraitDown,
     ]);
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: true,
       initialRoute: isloggedIn ? CustomerScreen.id : WelcomeScreen.id,
       routes: {
         WelcomeScreen.id: (context) => const WelcomeScreen(),
@@ -47,6 +48,7 @@ class WPMS extends StatelessWidget {
         RegistrationScreen.id: (context) => const RegistrationScreen(),
         CustomerScreen.id: (context) => const CustomerScreen(),
         ProfileScreen.id: (context) => const ProfileScreen(),
+        VerifyEmailPage.id: (context) => const VerifyEmailPage(),
       },
     );
   }

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class RoundedButtonNew extends StatelessWidget {
   final String text;
   final Color color;
-  final Function press;
+  final Function? press;
   const RoundedButtonNew({
     Key? key,
     required this.text,
@@ -20,7 +20,7 @@ class RoundedButtonNew extends StatelessWidget {
           BoxDecoration(color: color, borderRadius: BorderRadius.circular(10)),
       child: TextButton(
         child: Text(text, style: const TextStyle(color: Colors.white)),
-        onPressed: () => press(),
+        onPressed: press != null ? () => press!() : null,
       ),
     );
   }

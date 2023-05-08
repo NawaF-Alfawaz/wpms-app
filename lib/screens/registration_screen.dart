@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:wpms/components/Rounded_Button_New.dart';
+import 'package:wpms/screens/verify_email.dart';
 import '../components/background.dart';
 import 'customer_screen.dart';
 import 'login_screen.dart';
@@ -49,9 +50,20 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
         'Address': address,
         'Phone': phone,
       });
+      await FirebaseFirestore.instance
+          .collection('Customer')
+          .doc(userCredential.user!.uid)
+          .collection('Logs')
+          .add({
+        'Type': 'Account creation',
+        'CustomerName': username,
+        'Address': address,
+        'Phone': phone,
+        'Date': DateTime.now().toIso8601String(),
+      });
 
       Navigator.of(lastContext!).pop();
-      Navigator.of(lastContext!).pushReplacementNamed(CustomerScreen.id);
+      Navigator.of(lastContext!).pushReplacementNamed(VerifyEmailPage.id);
     } on FirebaseAuthException catch (error) {
       var message = 'An error occurd, please check your credentials!';
       if (error.message != null) {

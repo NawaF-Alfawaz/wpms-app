@@ -53,6 +53,17 @@ class _ProfileScreenState extends State<ProfileScreen> {
       'Address': userAddress,
       'Phone': phone,
     });
+    await FirebaseFirestore.instance
+        .collection('Customer')
+        .doc(user.uid)
+        .collection('Logs')
+        .add({
+      'Type': 'Account modification',
+      'CustomerName': userName,
+      'Address': userAddress,
+      'Phone': phone,
+      'Date': DateTime.now().toIso8601String(),
+    });
     ScaffoldMessenger.of(lastContext!).showSnackBar(
         const SnackBar(content: Text("Your infromation has been updated")));
   }
