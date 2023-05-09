@@ -4,6 +4,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:webview_flutter_plus/webview_flutter_plus.dart';
+// import '../../assets/webpages/index.html';
 
 import '../components/Rounded_Button_New.dart';
 import '../components/background.dart';
@@ -49,7 +51,22 @@ class _VerifyEmailPageState extends State<VerifyEmailPage> {
   @override
   Widget build(BuildContext context) {
     return isEmailVerified
-        ? CustomerScreen()
+        ? WebViewPlus(
+            javascriptMode: JavascriptMode.unrestricted,
+            onWebViewCreated: (controller) {
+              controller.loadUrl("assets/webpages/index.html");
+            },
+            javascriptChannels: Set.from([
+              JavascriptChannel(
+                  name: 'Captcha',
+                  onMessageReceived: (JavascriptMessage message) {
+                    Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => CustomerScreen()));
+                  })
+            ]),
+          )
         : Scaffold(
             body: Background(
               child: Stack(
