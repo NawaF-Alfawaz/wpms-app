@@ -2,26 +2,59 @@
 <html>
 <head>
     <title>reCAPTCHA</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            margin: 0 auto;
+            width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .g-recaptcha {
+            margin: 0 auto;
+            display: block;
+        }
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 20px auto;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
-<body style='background-color: white;'>
-<div style='height: 60px;'></div>
-<form action="?" method="POST">
-    <div class="g-recaptcha"
-         data-sitekey="6LdUqfUlAAAAAMm0t5Y5nAKzH1dD7ii7pYj1FrVr"
-         data-callback="captchaCallback"></div>
-
-</form>
-<script>
-      function captchaCallback(response){
-        console.log(response);
-        if(typeof Captcha!=="undefined"){
-          Captcha.postMessage(response);
+<body>
+    <h1>reCAPTCHA</h1>
+    <form action="?" method="POST">
+        <div class="g-recaptcha"
+             data-sitekey="6LdUqfUlAAAAAMm0t5Y5nAKzH1dD7ii7pYj1FrVr"
+             data-callback="captchaCallback"></div>
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        function captchaCallback(response) {
+            console.log(response);
+            if (typeof Captcha !== "undefined") {
+                Captcha.postMessage(response);
+            }
         }
-      }
     </script>
 </body>
 </html>
-
-<html>
-<body>
