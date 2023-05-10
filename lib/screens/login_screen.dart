@@ -71,7 +71,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 left: 5,
                 child: IconButton(
                   icon: const Icon(Icons.arrow_back_rounded),
-                  color: const Color.fromRGBO(0, 0, 139, 1),
+                  color: const Color.fromRGBO(5, 132, 54, 1),
                   onPressed: () {
                     FocusScope.of(context).unfocus();
                     Navigator.of(context).pop();
@@ -85,7 +85,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   'Track Your Shipment Now!',
                   style: Theme.of(context).textTheme.headlineLarge!.copyWith(
                       fontSize: 23,
-                      color: const Color.fromRGBO(0, 0, 139, 1),
+                      color: const Color.fromRGBO(5, 132, 54, 1),
                       fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(height: 30),
@@ -119,7 +119,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             ),
                             focusedBorder: OutlineInputBorder(
                               borderSide: const BorderSide(
-                                color: Color.fromRGBO(0, 0, 139, 1),
+                                color: Color.fromRGBO(5, 132, 54, 1),
                               ),
                               borderRadius: BorderRadius.circular(15),
                             ),
@@ -162,7 +162,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             ),
                             focusedBorder: OutlineInputBorder(
                               borderSide: const BorderSide(
-                                color: Color.fromRGBO(0, 0, 139, 1),
+                                color: Color.fromRGBO(5, 132, 54, 1),
                               ),
                               borderRadius: BorderRadius.circular(15),
                             ),
@@ -189,12 +189,12 @@ class _LoginScreenState extends State<LoginScreen> {
                       const SizedBox(height: 25),
                       if (_isLogingIn)
                         const CircularProgressIndicator(
-                          color: Color.fromRGBO(0, 0, 139, 1),
+                          color: Color.fromRGBO(5, 132, 54, 1),
                         ),
                       if (!_isLogingIn)
                         RoundedButtonNew(
                           text: 'Login',
-                          color: const Color.fromRGBO(0, 0, 139, 1),
+                          color: const Color.fromRGBO(5, 132, 54, 1),
                           press: _trySubmit,
                         ),
                       if (!_isLogingIn)
@@ -206,7 +206,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               child: const Text(
                                 'Register now',
                                 style: TextStyle(
-                                  color: Color.fromRGBO(0, 0, 139, 1),
+                                  color: Color.fromRGBO(5, 132, 54, 1),
                                 ),
                               ),
                               onPressed: () => Navigator.of(context)

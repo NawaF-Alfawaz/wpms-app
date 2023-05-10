@@ -38,7 +38,7 @@ class PackageInformation extends StatelessWidget {
                         width: 8,
                         child: DecoratedBox(
                           decoration: BoxDecoration(
-                              color: Colors.indigo.shade400,
+                              color: Color.fromRGBO(5, 132, 54, 1),
                               borderRadius: BorderRadius.circular(5)),
                         ),
                       ),
@@ -78,7 +78,7 @@ class PackageInformation extends StatelessWidget {
                               angle: 0,
                               child: Icon(
                                 Icons.local_shipping_rounded,
-                                color: Colors.indigo.shade300,
+                                color: Color.fromRGBO(5, 132, 54, 1),
                                 size: 25,
                               ),
                             ))
@@ -227,7 +227,7 @@ class PackageInformation extends StatelessWidget {
               width: 180,
               padding: const EdgeInsets.all(16),
               decoration: const BoxDecoration(
-                color: Color.fromRGBO(0, 0, 139, 1),
+                color: Color.fromRGBO(5, 132, 54, 1),
                 borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(24),
                     bottomRight: Radius.circular(24)),
@@ -249,7 +249,7 @@ class PackageInformation extends StatelessWidget {
                   width: 180,
                   padding: const EdgeInsets.all(16),
                   decoration: const BoxDecoration(
-                    color: Color.fromRGBO(0, 0, 139, 1),
+                    color: Color.fromRGBO(5, 132, 54, 1),
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(24),
                         bottomRight: Radius.circular(24)),
@@ -278,7 +278,7 @@ class PackageInformation extends StatelessWidget {
               actions: [
                 TextButton(
                   child: const Text('Pay',
-                      style: TextStyle(color: Color.fromRGBO(0, 0, 139, 1))),
+                      style: TextStyle(color: Color.fromRGBO(5, 132, 54, 1))),
                   onPressed: () async {
                     String docId = "";
                     await FirebaseFirestore.instance

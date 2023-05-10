@@ -16,7 +16,7 @@ class AppDrawer extends StatelessWidget {
         children: <Widget>[
           AppBar(
             elevation: 1,
-            backgroundColor: const Color.fromRGBO(0, 0, 139, 1),
+            backgroundColor: const Color.fromRGBO(5, 132, 54, 1),
             centerTitle: true,
             automaticallyImplyLeading: false, // back button: false
           ),

@@ -26,7 +26,7 @@ class _VerifyEmailPageState extends State<VerifyEmailPage> {
 
   Timer? timer;
 
-  Color buttonColor = Color.fromRGBO(0, 0, 139, 1);
+  Color buttonColor = Color.fromRGBO(5, 132, 54, 1);
 
   @override
   void initState() {
@@ -85,7 +85,7 @@ class _VerifyEmailPageState extends State<VerifyEmailPage> {
                               .headlineLarge!
                               .copyWith(
                                   fontSize: 30,
-                                  color: const Color.fromRGBO(0, 0, 139, 1),
+                                  color: const Color.fromRGBO(5, 132, 54, 1),
                                   fontWeight: FontWeight.bold),
                         ),
                         const SizedBox(height: 10),
@@ -167,7 +167,7 @@ class _VerifyEmailPageState extends State<VerifyEmailPage> {
       await Future.delayed(const Duration(seconds: 5));
       setState(() {
         canResendEmail = true;
-        buttonColor = Color.fromRGBO(0, 0, 139, 1);
+        buttonColor = Color.fromRGBO(5, 132, 54, 1);
       });
     } on Exception catch (e) {
       var message = 'An error occurd!';

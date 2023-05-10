@@ -90,7 +90,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
       drawer: AppDrawer(),
       appBar: AppBar(
         title: const Text("Update Information"),
-        backgroundColor: const Color.fromRGBO(0, 0, 139, 1),
+        backgroundColor: const Color.fromRGBO(5, 132, 54, 1),
       ),
       body: Container(
         padding: const EdgeInsets.only(left: 15, top: 50, right: 15),
@@ -252,7 +252,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     const SizedBox(height: 25),
                     RoundedButtonNew(
                       text: 'Save',
-                      color: const Color.fromRGBO(0, 0, 139, 1),
+                      color: const Color.fromRGBO(5, 132, 54, 1),
                       press: _submit,
                     ),
                   ],

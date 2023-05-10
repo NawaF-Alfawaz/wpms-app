@@ -108,7 +108,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     'HELLO THERE!',
                     style: Theme.of(context).textTheme.headlineLarge!.copyWith(
                         fontSize: 30,
-                        color: const Color.fromRGBO(0, 0, 139, 1),
+                        color: const Color.fromRGBO(5, 132, 54, 1),
                         fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(height: 10),
@@ -145,7 +145,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                               ),
                               focusedBorder: OutlineInputBorder(
                                 borderSide: const BorderSide(
-                                    color: Color.fromRGBO(0, 0, 139, 1)),
+                                    color: Color.fromRGBO(5, 132, 54, 1)),
                                 borderRadius: BorderRadius.circular(15),
                               ),
                               errorBorder: OutlineInputBorder(
@@ -187,7 +187,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                               ),
                               focusedBorder: OutlineInputBorder(
                                 borderSide: const BorderSide(
-                                    color: Color.fromRGBO(0, 0, 139, 1)),
+                                    color: Color.fromRGBO(5, 132, 54, 1)),
                                 borderRadius: BorderRadius.circular(15),
                               ),
                               errorBorder: OutlineInputBorder(
@@ -229,7 +229,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                               ),
                               focusedBorder: OutlineInputBorder(
                                 borderSide: const BorderSide(
-                                    color: Color.fromRGBO(0, 0, 139, 1)),
+                                    color: Color.fromRGBO(5, 132, 54, 1)),
                                 borderRadius: BorderRadius.circular(15),
                               ),
                               errorBorder: OutlineInputBorder(
@@ -272,7 +272,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                               ),
                               focusedBorder: OutlineInputBorder(
                                 borderSide: const BorderSide(
-                                    color: Color.fromRGBO(0, 0, 139, 1)),
+                                    color: Color.fromRGBO(5, 132, 54, 1)),
                                 borderRadius: BorderRadius.circular(15),
                               ),
                               errorBorder: OutlineInputBorder(
@@ -314,7 +314,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                               ),
                               focusedBorder: OutlineInputBorder(
                                 borderSide: const BorderSide(
-                                    color: Color.fromRGBO(0, 0, 139, 1)),
+                                    color: Color.fromRGBO(5, 132, 54, 1)),
                                 borderRadius: BorderRadius.circular(15),
                               ),
                               errorBorder: OutlineInputBorder(
@@ -341,11 +341,11 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                         const SizedBox(height: 25),
                         if (isSigningUp)
                           const CircularProgressIndicator(
-                              color: Color.fromRGBO(0, 0, 139, 1)),
+                              color: Color.fromRGBO(5, 132, 54, 1)),
                         if (!isSigningUp)
                           RoundedButtonNew(
                             text: 'Signup',
-                            color: const Color.fromRGBO(0, 0, 139, 1),
+                            color: Color.fromRGBO(5, 132, 54, 1),
                             press: _submit,
                           ),
                         if (!isSigningUp)
@@ -357,7 +357,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                                 child: const Text(
                                   'Login now',
                                   style: TextStyle(
-                                      color: Color.fromRGBO(0, 0, 139, 1)),
+                                      color: Color.fromRGBO(5, 132, 54, 1)),
                                 ),
                                 onPressed: () => Navigator.of(context)
                                     .pushReplacementNamed(LoginScreen.id),
@@ -376,7 +376,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 left: 5,
                 child: IconButton(
                   icon: const Icon(Icons.arrow_back_rounded),
-                  color: const Color.fromRGBO(0, 0, 139, 1),
+                  color: const Color.fromRGBO(5, 132, 54, 1),
                   onPressed: () {
                     FocusScope.of(context).unfocus();
                     Navigator.of(context).pop();

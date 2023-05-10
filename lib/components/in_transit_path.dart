@@ -19,7 +19,7 @@ class InTransitPath extends StatelessWidget {
       iconWidget: Container(
         padding: const EdgeInsets.all(8),
         decoration: const BoxDecoration(
-            color: Color.fromRGBO(0, 0, 139, 1),
+            color: Color.fromRGBO(5, 132, 54, 1),
             borderRadius: BorderRadius.all(Radius.circular(30))),
         child: const Icon(Icons.navigate_next_sharp, color: Colors.white),
       ),
@@ -36,7 +36,7 @@ class InTransitPath extends StatelessWidget {
       iconWidget: Container(
         padding: const EdgeInsets.all(8),
         decoration: const BoxDecoration(
-            color: Color.fromRGBO(0, 0, 139, 1),
+            color: Color.fromRGBO(5, 132, 54, 1),
             borderRadius: BorderRadius.all(Radius.circular(30))),
         child: const Icon(Icons.navigate_next_sharp, color: Colors.white),
       ),
@@ -53,7 +53,7 @@ class InTransitPath extends StatelessWidget {
       iconWidget: Container(
         padding: const EdgeInsets.all(8),
         decoration: const BoxDecoration(
-            color: Color.fromRGBO(0, 0, 139, 1),
+            color: Color.fromRGBO(5, 132, 54, 1),
             borderRadius: BorderRadius.all(Radius.circular(30))),
         child: const Icon(Icons.navigate_next_sharp, color: Colors.white),
       ),
@@ -70,7 +70,7 @@ class InTransitPath extends StatelessWidget {
       iconWidget: Container(
         padding: const EdgeInsets.all(8),
         decoration: const BoxDecoration(
-            color: Color.fromRGBO(0, 0, 139, 1),
+            color: Color.fromRGBO(5, 132, 54, 1),
             borderRadius: BorderRadius.all(Radius.circular(30))),
         child: const Icon(Icons.navigate_next_sharp, color: Colors.white),
       ),
@@ -165,7 +165,7 @@ class InTransitPath extends StatelessWidget {
           stepperList: steps,
           stepperDirection: Axis.vertical,
           inverted: false,
-          activeBarColor: const Color.fromRGBO(0, 0, 139, 0.5),
+          activeBarColor: const Color.fromRGBO(5, 132, 54, 1),
           inActiveBarColor: Colors.grey,
           activeIndex: whichStep(),
         ),

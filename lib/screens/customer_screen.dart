@@ -132,8 +132,8 @@ class _CustomerScreenState extends State<CustomerScreen> {
     return Scaffold(
       drawer: AppDrawer(),
       appBar: AppBar(
-        title: const Text('WPMS'),
-        backgroundColor: const Color.fromRGBO(0, 0, 139, 1),
+        title: const Text('Khobar E-Shopping'),
+        backgroundColor: const Color.fromRGBO(5, 132, 54, 1),
         elevation: 2,
       ),
       body: SingleChildScrollView(
@@ -147,7 +147,7 @@ class _CustomerScreenState extends State<CustomerScreen> {
                     "Track Your Shipment Now!",
                     style: TextStyle(
                         fontSize: 20,
-                        color: Color.fromRGBO(0, 0, 139, 1),
+                        color: Color.fromRGBO(5, 132, 54, 1),
                         fontWeight: FontWeight.bold),
                   )),
             ),

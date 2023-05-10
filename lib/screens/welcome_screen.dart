@@ -71,24 +71,24 @@ class WelcomeScreen extends StatelessWidget {
           child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Align(
-            alignment: Alignment.bottomCenter,
-            //margin: const EdgeInsets.only(top: 80, bottom: 80),
-            child: Image.asset('assets/images/wpms.png'),
-          ),
-          const SizedBox(height: 80),
+          // Align(
+          //   alignment: Alignment.bottomCenter,
+          //   //margin: const EdgeInsets.only(top: 80, bottom: 80),
+          //   child: Image.asset('assets/images/wpms.png'),
+          // ),
+          const SizedBox(height: 110),
           const Text(
-            'Welcome to WPMS📦',
+            'Welcome to                                    Khobar E-Shopping ',
             textAlign: TextAlign.center,
             style: TextStyle(
-                color: Color.fromRGBO(0, 0, 139, 1),
+                color: Color.fromRGBO(5, 132, 54, 1),
                 fontWeight: FontWeight.bold,
-                fontSize: 25),
+                fontSize: 32),
           ),
-          const SizedBox(height: 50),
+          const SizedBox(height: 80),
           RoundedButtonNew(
             text: 'LOGIN',
-            color: const Color.fromRGBO(0, 0, 139, 1),
+            color: const Color.fromRGBO(5, 132, 54, 1),
             press: () {
               Navigator.of(context).pushNamed(LoginScreen.id);
             },
@@ -96,7 +96,7 @@ class WelcomeScreen extends StatelessWidget {
           const SizedBox(height: 15),
           RoundedButtonNew(
             text: 'SIGNUP',
-            color: const Color.fromRGBO(0, 0, 139, 1),
+            color: const Color.fromRGBO(5, 132, 54, 1),
             press: () => Navigator.of(context).pushNamed(RegistrationScreen.id),
           ),
         ],
