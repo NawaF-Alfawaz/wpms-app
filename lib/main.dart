@@ -41,7 +41,7 @@ class WPMS extends StatelessWidget {
     ]);
     return MaterialApp(
       debugShowCheckedModeBanner: true,
-      initialRoute: isloggedIn ? CustomerScreen.id : WelcomeScreen.id,
+      initialRoute: isloggedIn ? VerifyEmailPage.id : WelcomeScreen.id,
       routes: {
         WelcomeScreen.id: (context) => const WelcomeScreen(),
         LoginScreen.id: (context) => const LoginScreen(),
