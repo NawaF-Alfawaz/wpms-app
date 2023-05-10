@@ -181,7 +181,7 @@ class _CustomerScreenState extends State<CustomerScreen> {
             if (packageData != null) InTransitPath(packageData: packageData!),
             if (packageData == null)
               Lottie.network(
-                  'https://assets2.lottiefiles.com/packages/lf20_t24tpvcu.json'),
+                  'https://lottie.host/ce077861-83d8-445c-9496-65000139b4bc/x3a5KsqJtD.json'),
           ],
         ),
       ),
